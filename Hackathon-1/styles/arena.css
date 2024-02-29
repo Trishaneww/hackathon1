@@ -1,0 +1,198 @@
+body {
+  background-color: rgb(255, 147, 147);
+}
+
+.battle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  height: 50vw;
+  font-size: 2rem;
+  background-image: url(../assets/background-grass.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.battle .vs {
+  width: 15vw;
+  margin-top: 85%;
+}
+.battle .card {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vw;
+  padding: 2em 0em;
+  width: 30%;
+}
+.battle .card__name {
+  color: goldenrod;
+}
+.battle .card__health {
+  margin: 5% 0%;
+}
+.battle .card__attack__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+  max-width: 55%;
+}
+.battle .card__attack__button {
+  padding: 0.5rem 2rem;
+}
+.battle .card__attack__button:hover {
+  background-color: orangered;
+  color: gold;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.battle .card__attack__button:active {
+  background-color: red;
+  color: goldenrod;
+}
+.battle__container {
+  color: aliceblue;
+  width: 96vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.battle__text {
+  margin-top: 0.75rem;
+  color: aliceblue;
+  font-weight: 400;
+}
+
+.select {
+  height: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.select__text {
+  margin-top: 2rem;
+}
+.select__button {
+  text-decoration: none;
+  color: inherit;
+}
+.select__button:hover {
+  color: orangered;
+}
+
+#pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em;
+  background-color: rgb(255, 147, 147);
+}
+
+.pokemon-holder {
+  border-radius: 15px;
+  transition: 200ms;
+}
+
+.pokemon {
+  width: 10em;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.pokemon:hover {
+  transform: scale(1.3, 1.3);
+}
+
+#pokemon-img, #pokemon-img2 {
+  width: 8em;
+}
+
+.hit {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: 50s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.shake {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}/*# sourceMappingURL=arena.css.map */

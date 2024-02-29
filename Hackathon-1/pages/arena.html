@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Hackathon-1/styles/arena.css">
+    <link rel="stylesheet" href="/Hackathon-1/styles/global.css"
+    <link rel="icon" href="./assets/Images/Photo-gallery-8.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Hackathon-1/assets/vs.png">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>POKEMON</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+<header>
+    <!-- NAV-BAR -->
+    <nav class="nav">
+        <img class="nav__logo" src="../assets/logo.png" alt="">
+        <ul class="nav__list">
+            <li><a class="nav__list__item" href="../index.html">Home</a></li>
+            <li><a class="nav__list__item" href="../pages/arena.html">Arena</a></li>
+            <li><a class="nav__list__item" href="../pages/about.html">About</a></li>
+        </ul>
+        <img class="nav__logo" src="../assets/logo.png" alt="">
+    </nav>
+</header>
+
+<!-- HIDDEN BATTLE SECTION -->
+    <section class="battle">
+
+        <h1 class="battle__text">Time to Battle!</h1>
+
+        <div class="battle__container">
+
+            <div id="pokemon-card" class="card">
+                <p  id="pokemon-name" class="card__name">PLAYER 1</p>
+                <img id="pokemon-img" src="/Hackathon-1/assets/brock.png" alt="Player 1 Pokemon img">
+                <p id="pokemon-type" class="card__type"></p>
+                <p class="card__attack"></p>
+                <div id="pokemon-attack__container" class="card__attack__container">
+
+                </div>
+                <p id="pokemon-health" class="card__health">---- HP</p>
+                <button id="ready-btn" class="card__attack__button">READY></button>
+            </div>
+
+            <div ><img class="vs" src="../assets/vs.png" alt=""></div>
+
+
+            <div id="pokemon-card2" class="card">
+                <p id="pokemon-name2" class="card__name">CPU</p>
+                <img id="pokemon-img2" src="/Hackathon-1/assets/ash.png" alt="Player 1 Pokemon img">
+                <p id="pokemon-type2" class="card__type"> <span class="card__type--color"></span></p>
+                <p class="card__attack"></p>
+                <div id="cpu-attack__container" class="card__attack__container">
+
+                </div>
+                <p id="pokemon-health2" class="card__health">---- HP</p>
+            </div>
+        </div>
+    </section>
+
+<!-- CHARACTER SELECT SECTION -->
+<div class="select">
+    <h1 class="select__text">Player 1: Choose Your Pokemon!</h1>
+
+    <div id="pokemon-container">
+    </div>
+</div>
+
+
+    <script src="/Hackathon-1/scripts/site-api.js"></script>
+</body>
+</html>
